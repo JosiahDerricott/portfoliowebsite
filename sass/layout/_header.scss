@@ -21,6 +21,9 @@
     text-decoration: none;
     color: $color-white;
 
+    animation: moveInBottom .5s ease-out .15s;
+    animation-fill-mode: backwards;
+
     &:not(:last-child) {
       margin-right: 2rem;
     }

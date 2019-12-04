@@ -49,6 +49,11 @@
     }
   }
 
+  &--animated {
+    animation: moveInBottom .4s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+
   &::after {
     content: "";
     display: inline-block;

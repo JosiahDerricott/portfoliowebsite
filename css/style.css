@@ -71,14 +71,48 @@ p {
     margin-top: 2rem; }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 4.3rem;
   font-weight: 700;
   text-transform: uppercase;
+  width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: #525252;
   backface-visibility: hidden;
+  display: inline-block; }
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.heading-fancy {
+  background-color: #ca3e47;
+  border-radius: .4rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
+.heading-fourth {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
   display: inline-block; }
 
 .u-center-text {
   text-align: center; }
+
+.u-right-text {
+  text-align: right; }
+
+.u-left-text {
+  text-align: left; }
+
+.u-justify-text {
+  text-align: justify; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
 
 .u-margin-bottom-big {
   margin-bottom: 6rem; }
@@ -91,7 +125,7 @@ p {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -104,11 +138,17 @@ p {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--dark {
+.btn--red {
   background-color: #ca3e47;
   color: #fafafa; }
-  .btn--dark::after {
+  .btn--red::after {
     background-color: #ca3e47; }
+
+.btn--dark {
+  background-color: #414141;
+  color: #fafafa; }
+  .btn--dark::after {
+    background-color: #414141; }
 
 .btn::after {
   content: "";
@@ -129,22 +169,51 @@ p {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #414141;
+  color: #fafafa;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #414141;
+  border-bottom: 2px solid #525252;
   padding: 3px;
-  transition: all .2s; }
+  transition: all .2s;
+  backface-visibility: hidden; }
 
 .btn-text:hover {
   background-color: #414141;
   color: #fafafa;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+  backface-visibility: hidden; }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.feature-box {
+  background-image: linear-gradient(to right bottom, #ca3e47, #9e2931);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+  transition: transform .3s; }
+  .feature-box__content {
+    height: 30rem; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #525252, #313131);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box__text {
+    margin: 5rem 0 10rem 0;
+    line-height: 1.6; }
+
+[class^="devicon-"] {
+  font-size: 3.5rem; }
 
 .row {
   max-width: 114rem;
@@ -182,4 +251,33 @@ p {
     text-align: center; }
 
 body {
-  background-color: #313131; }
+  background-image: linear-gradient(to right bottom, #414141, #313131); }
+
+.section-projects {
+  padding: 8rem 0; }
+
+.section-about-me {
+  padding: 8rem 0; }
+
+.about-me__desc {
+  line-height: 1.7; }
+
+.about-me__skills-container {
+  padding: 1rem 0; }
+  .about-me__skills-container .heading-fourth {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s; }
+  .about-me__skills-container:hover .heading-fourth {
+    border-bottom: 2px solid #ca3e47; }
+  .about-me__skills-container:hover .about-me__skills-container-icon > .about-me__skills-container-icon--icon {
+    color: #ca3e47; }
+
+.about-me__skills-container-icon {
+  display: inline-block;
+  float: right; }
+  .about-me__skills-container-icon--icon {
+    transition: all .2s ease-in-out;
+    backface-visibility: hidden;
+    color: #fafafa; }
+    .about-me__skills-container-icon--icon:not(:last-child) {
+      margin-right: 3rem; }

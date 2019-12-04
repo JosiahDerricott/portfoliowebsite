@@ -1,3 +1,51 @@
 body {
-  background-color: $color-primary-dark;
+  background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+}
+
+.section-projects {
+  padding: $default-page-padding 0;
+}
+
+.section-about-me {
+  padding: $default-page-padding 0;
+}
+
+.about-me {
+  &__desc {
+    line-height: 1.7;
+  }
+
+  &__skills {
+    &-container {
+      padding: 1rem 0;
+
+      & .heading-fourth {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom .2s;
+      }
+
+      &:hover .heading-fourth {
+        border-bottom: 2px solid $color-secondary;
+      }
+
+      &:hover &-icon > &-icon--icon {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &__skills-container-icon {
+    display: inline-block;
+    float: right;
+
+    &--icon {
+      transition: all .2s ease-in-out;
+      backface-visibility: hidden;
+      color: $color-white;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
 }

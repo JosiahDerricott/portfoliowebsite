@@ -1,6 +1,9 @@
 .navbar {
   display: block;
   width: 100%;
+
+  animation: moveInTop .3s ease-out 1.1s;
+  animation-fill-mode: backwards;
 }
 
 .navbar-box {

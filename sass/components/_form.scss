@@ -13,7 +13,7 @@
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white, .5);
+    background-color: rgba($color-white, .75);
     border: none;
     border-bottom: 3px solid transparent;
     width: 100%;
@@ -26,6 +26,7 @@
 
     &:focus {
       outline: none;
+      color: $color-primary-dark;
       box-shadow: 0 1rem 2rem rgba($color-black, .1);
       border-bottom: 3px solid $color-primary;
     }

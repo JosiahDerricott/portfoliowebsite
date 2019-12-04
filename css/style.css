@@ -330,7 +330,7 @@ p {
     margin: 0 auto;
     margin-top: 55rem;
     display: inline-block;
-    transition: all .3s;
+    transition: transform .3s;
     backface-visibility: hidden;
     overflow: hidden;
     text-decoration: none;

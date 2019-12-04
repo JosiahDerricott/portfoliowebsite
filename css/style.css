@@ -281,7 +281,9 @@ p {
 
 .navbar-item {
   display: inline-block;
-  margin-left: 1.2rem; }
+  margin-left: 1.2rem;
+  transition: all .2s;
+  border-bottom: 2px solid transparent; }
   .navbar-item__link {
     text-decoration: none;
     color: #fafafa;
